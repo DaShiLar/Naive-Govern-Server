@@ -1,44 +1,84 @@
 from flask import Blueprint, request
 from config import RESOURCE_PATH
 import controller
+import json
+import datetime
+from database import AlchemyEncoder
+from functools import reduce
+
 
 mod = Blueprint('api', __name__, template_folder='templates')
+
+
+def jsonDumper(obj):
+    str = json.dumps(obj, cls=AlchemyEncoder)
+    newobjs = json.loads(str)
+
+    ##如果newobj是tuple,说明返回值包含了多个表，则需要把两个表合并起来,重新构建返回值
+    if isinstance(newobjs[0], list) or isinstance(newobjs[0], tuple):
+        ret = []
+        for newobj in newobjs:
+            newtable = {}
+
+            for table in newobj:
+                for key, value in table.items():
+                    newtable[key] = value
+
+            ret.append(newtable)
+
+        return json.dumps(ret)
+
+    ## newobj是对象，说明返回值是只包含单个表，直接返回就可以啦
+    else:
+        return json.dumps(newobjs)
+
+
 
 
 @mod.route('/')
 def hello_world():
     return 'Hello World!'
 
-@mod.route('/api/comment/<id>')
-def comment(id):
-    ret = {}
-    with open(RESOURCE_PATH + '/comment_' + id + '.json', 'r') as fp:
-        str = fp.read()
-
-    return str
-
 @mod.route('/api/passages/latest')
 def passages_latest():
-    pass
+    latestList = controller.fetchLatestPassages()
+    print ('latestList Type')
+    print (type(latestList))  #DELETE
+    return jsonDumper(latestList)
+
 
 @mod.route('/api/passages/hotest')
 def passages_hotest():
-    pass
+    hotestList = controller.fetchHotestPassages()
+    return jsonDumper(hotestList)
 
 @mod.route('/api/nodes')
 def nodes():
-    pass
+    allNodes = controller.fetchAllNodes()
+    return jsonDumper(allNodes)
 
 @mod.route('/api/passages/node')
 def passages_node():
-    node_id = request.args('node_id', '')
+    node_id = request.args.get('node_id')
+    nodePassageList = controller.fetchNodePassages(node_id)
+    print (nodePassageList) ##DELETE
 
+    return jsonDumper(nodePassageList)
 
 
 @mod.route('/api/detail/passage')
 def detail_passage():
-    passage_id = request.args('passage_id', '')
+    passage_id = request.args.get('passage_id')
+    print("passage_id {0}".format(passage_id))
+    detailPassage = controller.fetchDetailPassage(passage_id)
+    print("detailPassage==") #DELETE
+    print(detailPassage)  #DELETE
+    return jsonDumper(detailPassage)
+
 
 @mod.route('/api/detail/comment')
 def detail_comment():
-    passage_id = request.args('passage_id', '')
+    passage_id = request.args.get('passage_id')
+    print("passage_id {0}".format(passage_id))
+    detail_comments = controller.fetchDetailComments(passage_id)
+    return jsonDumper(detail_comments)

@@ -1,5 +1,7 @@
 import time
 import traceback
+import json
+import datetime
 
 
 def generateTime():
@@ -18,3 +20,9 @@ def errorlog(func):
                 traceback.print_exc(file=fp)
 
     return wrapper
+
+
+def jsonDumper(models):
+    print ("jsonDumper...........")
+    print ( [model.__dict__ for model in models] )
+    return json.dumps([model.__dict__ for model in models])

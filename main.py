@@ -4,10 +4,13 @@ import os
 import sys
 sys.path.append("./views")
 import api
+import post
 import database
 
 app = Flask(__name__)
 app.register_blueprint(api.mod)
+app.register_blueprint(post.mod)
+
 
 database.init_db()
 
@@ -18,7 +21,7 @@ def shutdwon_session(exception=None):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port='8080')
 
    
 
