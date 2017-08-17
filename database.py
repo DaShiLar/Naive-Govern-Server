@@ -6,7 +6,7 @@ import json
 import datetime
 
 
-engine = create_engine(DB_CONNECT_STRING, echo=True, encoding="utf-8")
+engine = create_engine(DB_CONNECT_STRING, echo=False, encoding="utf-8")
 db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
 
 Base = declarative_base()

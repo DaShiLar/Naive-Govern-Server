@@ -1,496 +1,315 @@
-[2017-08-12 22:37:25 +0800] [8365] [INFO] Starting gunicorn 19.7.1
-[2017-08-12 22:37:25 +0800] [8365] [INFO] Listening at: http://0.0.0.0:8080 (8365)
-[2017-08-12 22:37:25 +0800] [8365] [INFO] Using worker: sync
-[2017-08-12 22:37:25 +0800] [8368] [INFO] Booting worker with pid: 8368
-[2017-08-12 22:37:25 +0800] [8369] [INFO] Booting worker with pid: 8369
-[2017-08-12 22:37:25 +0800] [8370] [INFO] Booting worker with pid: 8370
-[2017-08-12 22:37:25 +0800] [8371] [INFO] Booting worker with pid: 8371
-2017-08-12 22:37:26,950 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:37:26,957 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,959 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:37:26,959 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,960 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:37:26,960 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,962 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:26,965 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,974 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:26,974 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,975 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:37:26,975 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,977 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:37:26,978 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,980 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:37:26,989 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:26,992 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:37:26,992 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,126 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:37:27,126 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,127 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:37:27,129 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,130 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:37:27,130 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,132 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,136 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,137 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,137 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,139 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:37:27,140 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,144 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:37:27,144 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,146 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:37:27,149 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,150 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:37:27,153 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,194 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:37:27,196 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,197 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:37:27,197 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,199 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:37:27,199 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,201 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,205 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,206 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,206 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,207 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:37:27,207 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,208 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:37:27,208 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,209 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:37:27,209 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,210 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:37:27,213 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,238 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:37:27,238 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,239 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:37:27,239 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,240 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:37:27,240 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,242 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,242 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,242 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:37:27,243 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,243 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:37:27,243 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,244 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:37:27,244 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,245 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:37:27,246 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:27,246 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:37:27,247 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:37:31,613 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
-2017-08-12 22:37:31,614 INFO sqlalchemy.engine.base.Engine SELECT node.node_id AS node_node_id, node.passage_type AS node_passage_type 
-FROM node
-2017-08-12 22:37:31,614 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 22:37:31,615] ERROR in app: Exception on /api/nodes [GET]
-Traceback (most recent call last):
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "./views/api.py", line 31, in nodes
-    return json.dumps(allNodes)
-NameError: name 'json' is not defined
-[<models.Node object at 0x7f1ba77819e8>, <models.Node object at 0x7f1ba7781cf8>, <models.Node object at 0x7f1ba7781ba8>]
-2017-08-12 22:37:31,617 INFO sqlalchemy.engine.base.Engine ROLLBACK
-[2017-08-12 22:40:39 +0800] [8635] [INFO] Starting gunicorn 19.7.1
-[2017-08-12 22:40:39 +0800] [8635] [INFO] Listening at: http://0.0.0.0:8080 (8635)
-[2017-08-12 22:40:39 +0800] [8635] [INFO] Using worker: sync
-[2017-08-12 22:40:39 +0800] [8638] [INFO] Booting worker with pid: 8638
-[2017-08-12 22:40:39 +0800] [8639] [INFO] Booting worker with pid: 8639
-[2017-08-12 22:40:39 +0800] [8640] [INFO] Booting worker with pid: 8640
-[2017-08-12 22:40:39 +0800] [8641] [INFO] Booting worker with pid: 8641
-2017-08-12 22:40:41,266 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:40:41,273 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,274 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:40:41,275 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,275 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:40:41,275 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,279 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,281 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,285 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,287 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,288 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:40:41,289 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,290 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:40:41,301 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,303 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:40:41,303 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,304 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:40:41,304 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,556 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:40:41,558 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,562 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:40:41,565 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,566 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:40:41,567 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,568 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,577 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,579 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,579 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,580 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:40:41,580 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,581 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:40:41,583 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,586 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:40:41,587 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,588 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:40:41,589 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,639 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:40:41,639 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,642 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:40:41,642 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,643 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:40:41,643 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,646 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,646 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,647 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,649 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,650 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:40:41,650 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,651 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:40:41,653 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,655 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:40:41,655 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,656 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:40:41,658 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,697 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:40:41,698 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,699 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:40:41,700 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,700 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:40:41,700 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,702 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,702 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,703 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:40:41,703 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,703 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:40:41,703 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,704 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:40:41,704 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,706 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:40:41,706 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:41,706 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:40:41,707 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:40:47,490 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
-2017-08-12 22:40:47,491 INFO sqlalchemy.engine.base.Engine SELECT node.node_id AS node_node_id, node.passage_type AS node_passage_type 
-FROM node
-2017-08-12 22:40:47,491 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 22:40:47,493] ERROR in app: Exception on /api/nodes [GET]
-Traceback (most recent call last):
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "./views/api.py", line 33, in nodes
-    return json.dumps(allNodes)
-  File "/usr/lib/python3.4/json/__init__.py", line 230, in dumps
-    return _default_encoder.encode(obj)
-  File "/usr/lib/python3.4/json/encoder.py", line 192, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.4/json/encoder.py", line 250, in iterencode
-    return _iterencode(o, 0)
-  File "/usr/lib/python3.4/json/encoder.py", line 173, in default
-    raise TypeError(repr(o) + " is not JSON serializable")
-TypeError: <models.Node object at 0x7fe8237e48d0> is not JSON serializable
-[<models.Node object at 0x7fe8237e48d0>, <models.Node object at 0x7fe8237e4898>, <models.Node object at 0x7fe8237e4a58>]
-[<models.Node object at 0x7fe8237e48d0>, <models.Node object at 0x7fe8237e4898>, <models.Node object at 0x7fe8237e4a58>]
-2017-08-12 22:40:47,566 INFO sqlalchemy.engine.base.Engine ROLLBACK
-[2017-08-12 22:42:22 +0800] [8794] [INFO] Starting gunicorn 19.7.1
-[2017-08-12 22:42:22 +0800] [8794] [INFO] Listening at: http://0.0.0.0:8080 (8794)
-[2017-08-12 22:42:22 +0800] [8794] [INFO] Using worker: sync
-[2017-08-12 22:42:22 +0800] [8797] [INFO] Booting worker with pid: 8797
-[2017-08-12 22:42:22 +0800] [8798] [INFO] Booting worker with pid: 8798
-[2017-08-12 22:42:22 +0800] [8799] [INFO] Booting worker with pid: 8799
-[2017-08-12 22:42:22 +0800] [8800] [INFO] Booting worker with pid: 8800
-2017-08-12 22:42:23,745 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:42:23,746 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,750 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:42:23,754 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,755 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:42:23,755 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,759 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:23,761 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,766 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:23,768 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,774 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:42:23,774 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,775 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:42:23,776 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,777 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:42:23,781 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,786 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:42:23,786 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,963 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:42:23,963 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,964 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:42:23,965 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,966 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:42:23,969 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,971 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:23,973 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,974 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:23,974 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,975 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:42:23,975 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,979 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:42:23,981 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,982 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:42:23,982 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:23,983 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:42:23,985 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,043 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:42:24,044 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,045 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:42:24,049 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,050 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:42:24,050 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,051 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:24,052 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,052 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:24,052 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,053 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:42:24,053 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,054 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:42:24,057 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,058 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:42:24,058 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,059 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:42:24,059 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,079 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 22:42:24,079 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,081 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 22:42:24,081 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,081 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 22:42:24,081 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,083 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:24,083 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,084 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 22:42:24,084 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,084 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 22:42:24,084 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,085 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 22:42:24,085 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,086 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 22:42:24,087 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 22:42:24,087 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 22:42:24,088 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 22:42:41 +0800] [8638] [INFO] Parent changed, shutting down: <Worker 8638>
-[2017-08-12 22:42:41 +0800] [8638] [INFO] Worker exiting (pid: 8638)
-[2017-08-12 22:42:41 +0800] [8639] [INFO] Parent changed, shutting down: <Worker 8639>
-[2017-08-12 22:42:41 +0800] [8639] [INFO] Worker exiting (pid: 8639)
-[2017-08-12 22:42:41 +0800] [8641] [INFO] Parent changed, shutting down: <Worker 8641>
-[2017-08-12 22:42:41 +0800] [8641] [INFO] Worker exiting (pid: 8641)
-[2017-08-12 22:42:47 +0800] [8640] [INFO] Parent changed, shutting down: <Worker 8640>
-[2017-08-12 22:42:47 +0800] [8640] [INFO] Worker exiting (pid: 8640)
-2017-08-12 22:42:53,935 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
-2017-08-12 22:42:53,936 INFO sqlalchemy.engine.base.Engine SELECT node.node_id AS node_node_id, node.passage_type AS node_passage_type 
-FROM node
-2017-08-12 22:42:53,936 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 22:42:53,938] ERROR in app: Exception on /api/nodes [GET]
-Traceback (most recent call last):
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1982, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1614, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1517, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/_compat.py", line 33, in reraise
-    raise value
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1612, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/share/nginx/html/govern/venv/lib/python3.4/site-packages/flask/app.py", line 1598, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "./views/api.py", line 34, in nodes
-    return json.dumps(allNodes)
-  File "/usr/lib/python3.4/json/__init__.py", line 230, in dumps
-    return _default_encoder.encode(obj)
-  File "/usr/lib/python3.4/json/encoder.py", line 192, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.4/json/encoder.py", line 250, in iterencode
-    return _iterencode(o, 0)
-  File "/usr/lib/python3.4/json/encoder.py", line 173, in default
-    raise TypeError(repr(o) + " is not JSON serializable")
-TypeError: <models.Node object at 0x7fd902b479b0> is not JSON serializable
-[<models.Node object at 0x7fd902b479b0>, <models.Node object at 0x7fd902b47be0>, <models.Node object at 0x7fd902b47c50>]
-answer is
-[<models.Node object at 0x7fd902b479b0>, <models.Node object at 0x7fd902b47be0>, <models.Node object at 0x7fd902b47c50>]
-2017-08-12 22:42:53,941 INFO sqlalchemy.engine.base.Engine ROLLBACK
-[2017-08-12 23:11:18 +0800] [11047] [INFO] Starting gunicorn 19.7.1
-[2017-08-12 23:11:18 +0800] [11047] [INFO] Listening at: http://0.0.0.0:8080 (11047)
-[2017-08-12 23:11:18 +0800] [11047] [INFO] Using worker: sync
-[2017-08-12 23:11:18 +0800] [11050] [INFO] Booting worker with pid: 11050
-[2017-08-12 23:11:18 +0800] [11051] [INFO] Booting worker with pid: 11051
-[2017-08-12 23:11:18 +0800] [11052] [INFO] Booting worker with pid: 11052
-[2017-08-12 23:11:18 +0800] [11053] [INFO] Booting worker with pid: 11053
-2017-08-12 23:11:19,963 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:11:19,965 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,969 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:11:19,969 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,970 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:11:19,973 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,982 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:19,982 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,983 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:19,983 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,984 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:11:19,984 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,989 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:11:19,993 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,994 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:11:19,997 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:19,998 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:11:19,999 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,192 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:11:20,193 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,196 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:11:20,197 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,199 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:11:20,199 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,201 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,206 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,207 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,209 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,210 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:11:20,210 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,211 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:11:20,214 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,215 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:11:20,217 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,222 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:11:20,222 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,277 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:11:20,278 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,279 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:11:20,279 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,280 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:11:20,280 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,281 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,282 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,286 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,286 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,287 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:11:20,287 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,288 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:11:20,288 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,289 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:11:20,289 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,293 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:11:20,293 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,312 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:11:20,313 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,314 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:11:20,314 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,315 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:11:20,315 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,316 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,316 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,317 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:11:20,317 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,317 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:11:20,318 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,319 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:11:20,319 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,320 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:11:20,320 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:11:20,321 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:11:20,321 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 23:16:47 +0800] [11461] [INFO] Booting worker with pid: 11461
-2017-08-12 23:16:47,912 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:16:47,912 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,914 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:16:47,914 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,914 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:16:47,914 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,916 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:16:47,916 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,917 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:16:47,917 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,918 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:16:47,918 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,919 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:16:47,919 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,921 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:16:47,921 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:16:47,922 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:16:47,922 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 23:17:26 +0800] [11545] [INFO] Booting worker with pid: 11545
-2017-08-12 23:17:26,754 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:17:26,754 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,755 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:17:26,755 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,756 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:17:26,756 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,757 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:26,757 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,758 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:26,758 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,759 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:17:26,759 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,760 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:17:26,760 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,761 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:17:26,761 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:26,762 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:17:26,762 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 23:17:32 +0800] [11550] [INFO] Booting worker with pid: 11550
-2017-08-12 23:17:32,476 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:17:32,476 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,477 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:17:32,477 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,478 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:17:32,478 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,479 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:32,479 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,480 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:32,480 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,481 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:17:32,481 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,482 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:17:32,482 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,483 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:17:32,484 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:32,484 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:17:32,485 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 23:17:44 +0800] [11556] [INFO] Booting worker with pid: 11556
-2017-08-12 23:17:45,016 INFO sqlalchemy.engine.base.Engine SHOW VARIABLES LIKE 'sql_mode'
-2017-08-12 23:17:45,020 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,022 INFO sqlalchemy.engine.base.Engine SELECT DATABASE()
-2017-08-12 23:17:45,022 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,023 INFO sqlalchemy.engine.base.Engine show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-2017-08-12 23:17:45,023 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,025 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:45,025 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,026 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-2017-08-12 23:17:45,026 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,026 INFO sqlalchemy.engine.base.Engine SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-2017-08-12 23:17:45,026 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,027 INFO sqlalchemy.engine.base.Engine DESCRIBE `comment`
-2017-08-12 23:17:45,028 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,029 INFO sqlalchemy.engine.base.Engine DESCRIBE `passage`
-2017-08-12 23:17:45,029 INFO sqlalchemy.engine.base.Engine {}
-2017-08-12 23:17:45,030 INFO sqlalchemy.engine.base.Engine DESCRIBE `node`
-2017-08-12 23:17:45,030 INFO sqlalchemy.engine.base.Engine {}
-[2017-08-12 23:17:56 +0800] [11545] [INFO] Parent changed, shutting down: <Worker 11545>
-[2017-08-12 23:17:56 +0800] [11545] [INFO] Worker exiting (pid: 11545)
-[2017-08-12 23:18:00 +0800] [11556] [INFO] Parent changed, shutting down: <Worker 11556>
-[2017-08-12 23:18:00 +0800] [11556] [INFO] Worker exiting (pid: 11556)
-[2017-08-12 23:18:02 +0800] [11550] [INFO] Parent changed, shutting down: <Worker 11550>
-[2017-08-12 23:18:02 +0800] [11550] [INFO] Worker exiting (pid: 11550)
-[2017-08-12 23:18:05 +0800] [11050] [INFO] Parent changed, shutting down: <Worker 11050>
-[2017-08-12 23:18:05 +0800] [11050] [INFO] Worker exiting (pid: 11050)
+[2017-08-17 17:49:25 +0800] [15769] [INFO] Starting gunicorn 19.7.1
+[2017-08-17 17:49:25 +0800] [15769] [INFO] Listening at: http://127.0.0.1:3000 (15769)
+[2017-08-17 17:49:25 +0800] [15769] [INFO] Using worker: sync
+[2017-08-17 17:49:25 +0800] [15772] [INFO] Booting worker with pid: 15772
+[2017-08-17 17:49:25 +0800] [15773] [INFO] Booting worker with pid: 15773
+[2017-08-17 17:49:25 +0800] [15774] [INFO] Booting worker with pid: 15774
+[2017-08-17 17:49:25 +0800] [15775] [INFO] Booting worker with pid: 15775
+[2017-08-17 17:50:45 +0800] [15876] [INFO] Starting gunicorn 19.7.1
+[2017-08-17 17:50:45 +0800] [15876] [INFO] Listening at: http://127.0.0.1:2000 (15876)
+[2017-08-17 17:50:45 +0800] [15876] [INFO] Using worker: sync
+[2017-08-17 17:50:45 +0800] [15879] [INFO] Booting worker with pid: 15879
+[2017-08-17 17:50:45 +0800] [15880] [INFO] Booting worker with pid: 15880
+[2017-08-17 17:50:45 +0800] [15881] [INFO] Booting worker with pid: 15881
+[2017-08-17 17:50:45 +0800] [15882] [INFO] Booting worker with pid: 15882
+{"passage_id":"2","comment_incline":"2","comment_content":{"textarea":""}}
+{'passage_id': '2', 'comment_incline': '2', 'comment_content': {'textarea': ''}}
+passage_id 6217
+hotestPassages==
+[(<models.Passage object at 0x7f4a9d109ac8>, <models.Node object at 0x7f4a9d109b38>), (<models.Passage object at 0x7f4a9d109ba8>, <models.Node object at 0x7f4a9d109b38>), (<models.Passage object at 0x7f4a9d109c18>, <models.Node object at 0x7f4a9d109b38>), (<models.Passage object at 0x7f4a9d109c88>, <models.Node object at 0x7f4a9d109b38>), (<models.Passage object at 0x7f4a9d109cf8>, <models.Node object at 0x7f4a9d109b38>), (<models.Passage object at 0x7f4a9d109d68>, <models.Node object at 0x7f4a9d109dd8>), (<models.Passage object at 0x7f4a9d109e48>, <models.Node object at 0x7f4a9d109dd8>), (<models.Passage object at 0x7f4a9d109eb8>, <models.Node object at 0x7f4a9d109dd8>), (<models.Passage object at 0x7f4a9d109f28>, <models.Node object at 0x7f4a9d109dd8>), (<models.Passage object at 0x7f4a9d109f98>, <models.Node object at 0x7f4a9d109dd8>), (<models.Passage object at 0x7f4a9d110048>, <models.Node object at 0x7f4a9d1100f0>), (<models.Passage object at 0x7f4a9d110198>, <models.Node object at 0x7f4a9d1100f0>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+latestList Type
+<class 'list'>
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 2
+detailPassage==
+[(<models.Passage object at 0x7f4a9d109400>, <models.Node object at 0x7f4a9d109470>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 25
+nodePassageList==
+[(<models.Passage object at 0x7f4a9d1093c8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d1094e0>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109588>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d1095f8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d1096a0>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109780>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109828>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d1097f0>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109860>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109908>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109ac8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109ba8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109c18>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109be0>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109c88>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109cf8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109d68>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109e48>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109eb8>, <models.Node object at 0x7f4a9d109390>), (<models.Passage object at 0x7f4a9d109e80>, <models.Node object at 0x7f4a9d109390>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 
+detailPassage==
+[]
+passage_id 
+nodePassageList==
+[(<models.Passage object at 0x7f4a9d1100f0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d110470>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d110358>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f080>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f0f0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f160>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f1d0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f240>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f2b0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f320>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f390>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f400>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f4a8>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f550>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f5f8>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f6a0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f748>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f7f0>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f898>, <models.Node object at 0x7f4a9d110048>), (<models.Passage object at 0x7f4a9d11f940>, <models.Node object at 0x7f4a9d110048>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMetalatestList Type
+<class 'list'>
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+latestList Type
+<class 'list'>
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 2
+detailPassage==
+[(<models.Passage object at 0x7f4a9d14fe48>, <models.Node object at 0x7f4a9d14fef0>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+{"passage_id":"23","comment_incline":"1","comment_content":{"textarea":""}}
+{'passage_id': '23', 'comment_incline': '1', 'comment_content': {'textarea': ''}}
+passage_id 6217
+detailPassage==
+[(<models.Passage object at 0x7f4a9d15d518>, <models.Node object at 0x7f4a9d15dda0>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+nodePassageList==
+[(<models.Passage object at 0x7f4a9d1164e0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d1165c0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116630>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d1166a0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116710>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116780>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d1167f0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116860>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d1168d0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116940>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d1169b0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116a20>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116ac8>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116b70>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116c18>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116cc0>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116d68>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116e10>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116eb8>, <models.Node object at 0x7f4a9d116550>), (<models.Passage object at 0x7f4a9d116f60>, <models.Node object at 0x7f4a9d116550>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+hotestPassages==
+[(<models.Passage object at 0x7f4a9d116b70>, <models.Node object at 0x7f4a9d116c18>), (<models.Passage object at 0x7f4a9d116cc0>, <models.Node object at 0x7f4a9d116c18>), (<models.Passage object at 0x7f4a9d116d68>, <models.Node object at 0x7f4a9d116c18>), (<models.Passage object at 0x7f4a9d116e10>, <models.Node object at 0x7f4a9d116c18>), (<models.Passage object at 0x7f4a9d116eb8>, <models.Node object at 0x7f4a9d116c18>), (<models.Passage object at 0x7f4a9d116f60>, <models.Node object at 0x7f4a9d116240>), (<models.Passage object at 0x7f4a9d1162b0>, <models.Node object at 0x7f4a9d116240>), (<models.Passage object at 0x7f4a9d116358>, <models.Node object at 0x7f4a9d116240>), (<models.Passage object at 0x7f4a9fc29ac8>, <models.Node object at 0x7f4a9d116240>), (<models.Passage object at 0x7f4a9d15da58>, <models.Node object at 0x7f4a9d116240>), (<models.Passage object at 0x7f4a9d15da90>, <models.Node object at 0x7f4a9d15d748>), (<models.Passage object at 0x7f4a9d15d780>, <models.Node object at 0x7f4a9d15d748>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 23
+is instance DeclarativeMeta
+hotestPassages==
+[(<models.Passage object at 0x7f4a9d174dd8>, <models.Node object at 0x7f4a9d1740b8>), (<models.Passage object at 0x7f4a9d174390>, <models.Node object at 0x7f4a9d1740b8>), (<models.Passage object at 0x7f4a9d174860>, <models.Node object at 0x7f4a9d1740b8>), (<models.Passage object at 0x7f4a9d174a20>, <models.Node object at 0x7f4a9d1740b8>), (<models.Passage object at 0x7f4a9d174e80>, <models.Node object at 0x7f4a9d1740b8>), (<models.Passage object at 0x7f4a9d174828>, <models.Node object at 0x7f4a9d123080>), (<models.Passage object at 0x7f4a9d1230f0>, <models.Node object at 0x7f4a9d123080>), (<models.Passage object at 0x7f4a9d123160>, <models.Node object at 0x7f4a9d123080>), (<models.Passage object at 0x7f4a9d1231d0>, <models.Node object at 0x7f4a9d123080>), (<models.Passage object at 0x7f4a9d123240>, <models.Node object at 0x7f4a9d123080>), (<models.Passage object at 0x7f4a9d1232b0>, <models.Node object at 0x7f4a9d123358>), (<models.Passage object at 0x7f4a9d123400>, <models.Node object at 0x7f4a9d123358>)]
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 
+passage_id 
+passage_id 
+allNode==
+<class 'models.Node'>
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+is instance DeclarativeMeta
+passage_id 2
+is instance DeclarativeMeta
+is instance DeclarativeMeta
