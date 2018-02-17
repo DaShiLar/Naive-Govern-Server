@@ -1,2 +1,2 @@
-# govern
-政务公开
+# The server side of the government policy notification
+
